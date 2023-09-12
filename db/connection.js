@@ -5,7 +5,9 @@ const db = mysql.createConnection({
     user: 'root',
     password: 'charchar',
     database: 'employee_tracker_db'
-});
+    },
+    console.log(`Connected to the database.`)
+);
 
 db.connect((err) => {
     if (err) {
